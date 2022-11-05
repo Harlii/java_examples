@@ -11,13 +11,19 @@ public class CalculatorOperations {
 
   public static void main(String[] args) {
     Assert.assertEquals(sum(3, 5), 8);
-    Assert.assertEquals(sum(2.9, 3.3), "6,2");
-    Assert.assertEquals(difference(12, 5), 7);
-    Assert.assertEquals(difference(5.9, 3.3),  "2,6");
-    Assert.assertEquals(multiplication(3, 5), 15);
-    Assert.assertEquals(multiplication(2.2, 4.3), "9,46");
-    Assert.assertEquals(division(10, 4), 2);
-    Assert.assertEquals(division(10.0, 4.0), "2,5");
+    Assert.assertEquals(sum(0, 0), 0);
+    Assert.assertEquals(sum(10, 0), 10);
+    Assert.assertEquals(sum(0, -5), -5);
+    Assert.assertEquals(sum(-5, 6), 1);
+    Assert.assertEquals(sum(5, -7), -2);
+    Assert.assertEquals(sum(-7, -5), -12);
+//    Assert.assertEquals(sum(2.9, 3.3), "6,2");
+//    Assert.assertEquals(difference(12, 5), 7);
+//    Assert.assertEquals(difference(5.9, 3.3),  "2,6");
+//    Assert.assertEquals(multiplication(3, 5), 15);
+//    Assert.assertEquals(multiplication(2.2, 4.3), "9,46");
+//    Assert.assertEquals(division(10, 4), 2);
+//    Assert.assertEquals(division(10.0, 4.0), "2,5");
   }
 
   public static int sum(int a, int b) {
